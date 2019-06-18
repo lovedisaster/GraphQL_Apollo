@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Green Fundation
+    script(src='/build/bundle.js', defer='')
+
+    link(rel="stylesheet",href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm",
+    crossorigin="anonymous")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Hammersmith+One|Carter+One|Bungee|Righteous|Luckiest+Guy|Unna|Questrial")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.4.1/css/all.css",
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz",
+    crossorigin="anonymous")
+
+    if (!isProd)
+      script(src='http://localhost:3001/livereload.js')
+    style(type='text/css').
+      #loading-canvas{
+          position:fixed;
+          top:0;
+          bottom:0;
+          left:0;
+          right:0;
+          background-color:#fff;
+          z-index: 40;
+          display: block;
+          font-family: 'Acme', sans-serif;
+      }
+  body
+    #root
+
+  
