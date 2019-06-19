@@ -31,9 +31,11 @@ export const Title = styled.div`
         margin-right:50px;
         height: 70px;
     }
-    h5{
-    display:inline-block;
-    position:relative;
-    margin-bottom:-20px;
+    h2{
+        display:inline-block;
+        position:relative;
+        margin-bottom:0;
+        color: #4a4a4a;
+        font-weight:bold;
     }
 `;

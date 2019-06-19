@@ -9,7 +9,7 @@ const Nav = () => {
             <div className="container">
                 <ul className="nav justify-content-end">
                     <li className="nav-item">
-                        <a href="/donation" className="nav-link active">Let's Donate!  <img className="moneyIcon" src={moneyIcon} alt={'moneyIcon'}/></a>
+                        <a target="_blank" href="/donation" className="nav-link active">Let's Donate!  <img className="moneyIcon" src={moneyIcon} alt={'moneyIcon'}/></a>
                     </li>
                 </ul>
             </div>

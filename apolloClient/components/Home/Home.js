@@ -24,22 +24,22 @@ class Home extends React.Component {
                     <BannerTitle>
                         <div className="col">
                             <div className="row-md-auto text-center">
-                                <h5>We've raised:</h5>
+                                <h5>We've raised:</h5><img src={MoneyBag} alt={''}/>
                                 <br/>
-
                                 <Subscription subscription={subscriptionQuery}>
                                     {(data) => {
-                                        if(data != undefined) {
+                                        console.log(data);
+                                        if(data && data.data != undefined) {
+                                            
                                             if(data.loading) {
                                                 return <h1>Loading...</h1>
                                             }else{
                                                 return <h1>
-                                                    <img src={MoneyBag} alt={''}/>
                                                         {data.data.donationTotal.total}
                                                     </h1>
                                             }
                                         }else {
-                                            return <h1><img src={MoneyBag} alt={''}/>0</h1>
+                                            return <h1>0</h1>
                                         }
                                     }}
                                 </Subscription>

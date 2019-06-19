@@ -14,7 +14,6 @@ class ThankYou extends Component {
       <Wrapper>
         <ThankYouWrapper>
         <p>Thank you for your help. You've donated ${this.props.donatedAmount}.</p>
-        <a href="/">Back to home page</a>
         </ThankYouWrapper>
       </Wrapper>
     );

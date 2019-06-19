@@ -9,7 +9,7 @@ const LogoBanner = () => {
             <div className="container">
                 <Title>
                     <img src={logo} alt={"logo"} />
-                    <h5> Make the world a better place to live in....</h5>
+                    <h2> Make the world a better place</h2>
                 </Title>
             </div>
         </LogoBannerWrapper>

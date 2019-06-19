@@ -12,8 +12,7 @@ export const Banner = styled.div `
   background-image: url(${Hero});
   background-position: center;
   background-size: cover;
-  padding-top:80px;
-  font-family: 'Righteous', cursive;
+  padding-top: 50px;
   font-weight: 700;
   .col {
     margin: o auto;
@@ -40,11 +39,9 @@ export const BannerTitle = styled.div`
     margin:0 auto;
     display:inline-block;
     font-size: 30px;
-    font-family: 'Righteous', cursive;
-
   }
   img {
-    height: 100px;
+    height: 50px;
     margin-top:-10px;
     margin-right:-10px;
   }
