@@ -1,0 +1,9 @@
+{
+  "presets": ["react","es2017"], 
+  "plugins": [
+    ["transform-object-rest-spread"], 
+    ["babel-plugin-styled-components", {
+        "ssr": false
+      }]
+    ]
+}
