@@ -5,7 +5,7 @@ const totalDonationMessage = "Total donations made";
 const successfulDonationMessage = "Donated successfully";
 const errorMessage = "Donation failed.";
 
-const DonationServices = {
+const donationServices = {
     makeDonation: (amount) => 
         new Promise((resolve, reject) => {
             const data = setCache('total', amount);
@@ -45,4 +45,4 @@ const getCache = function (k) {
     }
 }
 
-module.exports = DonationServices;
+module.exports = donationServices;
