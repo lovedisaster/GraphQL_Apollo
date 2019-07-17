@@ -4,7 +4,6 @@ const {
   } = require('graphql-server-express');
 
 const bodyParser = require('body-parser');
-
 const schema = require('../graphql/schema');
 
 

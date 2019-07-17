@@ -31,8 +31,7 @@ class Donate extends Component {
       <Wrapper>
           <DonationForm>
             <small>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              We appreciate for your donation, please enter the amount:
             </small>
             <br/><br/>
             <ValidationNumberField keyProp='Amount' keyPressHandler={this._keyPressHandler} onFocusHandler={() => {}}  onBlurHandler={() => {}} formatNumber={true} name='Amount' placeHolder="Enter Donation Amount"
