@@ -23,7 +23,7 @@
     "graphql-tools": "4.0.2",
     "graphql-yoga": "1.16.7",
     "html-webpack-plugin": "3.2.0",
-    "jquery": "3.2.1",
+    "jquery": "3.5.0",
     "node-cache": "4.1.1",
     "pug": "2.0.0-rc.2",
     "react-addons-css-transition-group": "15.5.2",
