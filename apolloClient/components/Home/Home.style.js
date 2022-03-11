@@ -32,13 +32,14 @@ export const BannerTitle = styled.div`
     margin:0 auto;
     font-size:100px;
     margin-left:-10px;
-
+    font-family: 'Open Sans', sans-serif;
   }
   h5 {
     color:#fff;
     margin:0 auto;
     display:inline-block;
     font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
   }
   img {
     height: 50px;

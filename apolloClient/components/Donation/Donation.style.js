@@ -13,6 +13,7 @@ export const Wrapper = styled.div `
     background-color: #f7f7f7;
     padding: 20px 25px 30px;
     width: 500px;
+    font-family: 'Open Sans', sans-serif;
     @media (max-width: 992px) {
       width: 300px;
     }

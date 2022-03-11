@@ -38,5 +38,6 @@ export const Title = styled.div`
         margin-bottom:0;
         color: #4a4a4a;
         font-weight:bold;
+        font-family: 'Open Sans', sans-serif;
     }
 `;

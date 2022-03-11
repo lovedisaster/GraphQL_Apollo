@@ -4,7 +4,7 @@ import {FooterWrapper} from './FooterStyles.js';
 const Footer = () => {
     return (
         <FooterWrapper>
-            &copy; 2018. Green Fund. All rights reserved
+            &copy; 2018. Green Fund.
         </FooterWrapper>
     );
 }
