@@ -1,7 +1,8 @@
 {
-  "presets": ["react","es2017"], 
+  "presets": ["@babel/preset-react","@babel/preset-env"], 
   "plugins": [
-    ["transform-object-rest-spread"], 
+    "@babel/plugin-proposal-object-rest-spread", 
+    "@babel/plugin-transform-modules-commonjs",
     ["babel-plugin-styled-components", {
         "ssr": false
       }]

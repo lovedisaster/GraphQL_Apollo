@@ -5,6 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './apolloClient/app.js',
+  mode: 'development',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'server/public/build'),
@@ -18,33 +19,35 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new LiveReloadPlugin({port: 3001, hostname: 'localhost'}),
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
-    }),
     new HtmlWebpackPlugin()
   ],
   devtool: "eval-source-map",
   module: {
     rules: [
-    {
-      test: /\.jsx?$/,
-      exclude: /(node_modules|bower_components)/,
-      loader: 'babel-loader'
-    },
-    {
-      test:/\.(png|jpg|ico)$/,
-      use:'url-loader' 
-    },
-    {
-      test: /\.css$/,
-      use: [{
-        loader: "style-loader"
-      }, {
-        loader: "css-loader", options: {
-          sourceMap: true
+      {
+        test: /\.m?js/,
+        resolve: {
+            fullySpecified: false
         }
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader'
+      },
+      {
+        test:/\.(png|jpg|ico)$/,
+        use:'url-loader' 
+      },
+      {
+        test: /\.css$/,
+        use: [{
+          loader: "style-loader"
+        }, {
+          loader: "css-loader", options: {
+            sourceMap: true
+          }
+        }]
       }]
-    }]
   }
 };

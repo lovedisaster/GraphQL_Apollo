@@ -41,7 +41,7 @@ export const BlankButton = styled.button`
   }
 `;
 
-export const UnselectBtn = BlankButton.extend`
+export const UnselectBtn = styled(BlankButton)`
   height: 35px;
   font-size: 12px;
   padding: 8px 15px;
@@ -70,7 +70,7 @@ export const UnselectBtn = BlankButton.extend`
   }
 `;
 
-export const CenteredButton = SolidButton.extend`
+export const CenteredButton = styled(SolidButton)`
   margin:0 auto;
 `;
 

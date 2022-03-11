@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const LogoBannerWrapper = styled.div`
     width: 100%;
     height: 150px;
+    margin-top: 60px;
     background-color:#fff;
     display: flex;
     justify-content: flex-start;
