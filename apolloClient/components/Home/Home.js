@@ -18,8 +18,8 @@ class Home extends React.Component {
                     <BannerTitle>
                         <div className="col">
                             <div className="row-md-auto text-center">
-                                <h5>We've raised:</h5><img src={MoneyBag} alt={''}/>
-                                <br/>
+                            <img src={MoneyBag} alt={''}/>&nbsp;<h5>We've raised </h5>
+                            <br/>
                                 <Subscription subscription={subscriptionQuery}>
                                     {(data) => {
                                         if(data && data.data != undefined) {
@@ -28,11 +28,11 @@ class Home extends React.Component {
                                                 return <h1>Loading...</h1>
                                             }else{
                                                 return <h1>
-                                                        {NumberFormat(data.data.donationTotal.total)}
+                                                        ${NumberFormat(data.data.donationTotal.total)}
                                                     </h1>
                                             }
                                         }else {
-                                            return <h1>0</h1>
+                                            return <h1>$0</h1>
                                         }
                                     }}
                                 </Subscription>

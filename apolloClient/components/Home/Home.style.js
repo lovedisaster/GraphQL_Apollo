@@ -35,7 +35,7 @@ export const BannerTitle = styled.div`
     font-family: 'Open Sans', sans-serif;
   }
   h5 {
-    color:#fff;
+    color:#4a4a4a;
     margin:0 auto;
     display:inline-block;
     font-size: 30px;
