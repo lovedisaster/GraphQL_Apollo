@@ -1,17 +1,11 @@
 import React from 'react';
 import gql from 'graphql-tag';
 import {Banner,BannerTitle} from './Home.style';
-import MoneyBag from './Money - icon.png';
-import { Subscription } from "react-apollo";
+import MoneyBag from './img/Money - icon.png';
+import { Subscription } from 'react-apollo';
+import {NumberFormat} from '../../Utils/CommonUtils';
+import subscriptionQuery from './subscriptionQuery.graphql';
 
-
-const subscriptionQuery = gql`  
-  subscription{
-    donationTotal{
-        total
-    }
-  }
-`
 class Home extends React.Component {    
 
     constructor(props) {
@@ -28,14 +22,13 @@ class Home extends React.Component {
                                 <br/>
                                 <Subscription subscription={subscriptionQuery}>
                                     {(data) => {
-                                        console.log(data);
                                         if(data && data.data != undefined) {
                                             
                                             if(data.loading) {
                                                 return <h1>Loading...</h1>
                                             }else{
                                                 return <h1>
-                                                        {data.data.donationTotal.total}
+                                                        {NumberFormat(data.data.donationTotal.total)}
                                                     </h1>
                                             }
                                         }else {

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Hero from "./Hero.jpg";
+import Hero from "./img/Hero.jpg";
 
 export const Banner = styled.div `
   min-height: ${(window.innerHeight - 220) + 'px'};

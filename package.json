@@ -23,7 +23,6 @@
     "express": "^4.17.3",
     "graphql": "^0.13.2",
     "graphql-server-express": "^1.4.1",
-    "graphql-tag": "^2.12.6",
     "graphql-tools": "^4.0.8",
     "graphql-yoga": "^1.18.3",
     "jquery": "^3.6.0",
@@ -58,6 +57,7 @@
     "chai": "^3.5.0",
     "cross-env": "^3.2.4",
     "express-graphql": "^0.6.12",
+    "graphql-tag": "^2.12.6",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^27.5.1",
     "jsdom": "^19.0.0",
@@ -75,6 +75,7 @@
     "url-loader": "^1.1.2",
     "webpack": "^5.70.0",
     "webpack-dev-middleware": "^5.3.1",
+    "webpack-graphql-loader": "^1.0.2",
     "webpack-livereload-plugin": "^3.0.2"
   }
 }
